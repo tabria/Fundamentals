@@ -1,2 +1,2 @@
 # Fundamentals
-Softuni Programming Fundamentals 05 2017
+Softuni Programming Fundamentals 22.05.2017

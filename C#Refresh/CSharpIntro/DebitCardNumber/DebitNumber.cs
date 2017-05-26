@@ -3,7 +3,7 @@
 
 namespace DebitCardNumber
 {
-   public class Program
+   public class DebitNumber
     {
        public static void Main()
         {

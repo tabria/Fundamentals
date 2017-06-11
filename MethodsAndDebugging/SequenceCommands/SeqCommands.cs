@@ -7,6 +7,15 @@ namespace SequenceCommands
     {
         public static void Main()
         {
+
+            int[] arr = new int[5] { 5, 6, 7, 8, 9 };
+            changeArr(arr);
+
+            Console.WriteLine(string.Join(" ", arr));
+            changeArr2(ref arr);
+
+            Console.WriteLine(string.Join(" ", arr));
+
             int sizeOfArray = int.Parse(Console.ReadLine());
 
             long[] array = Console.ReadLine()
@@ -40,7 +49,18 @@ namespace SequenceCommands
 
             } while (true) ;
         }
-
+        static void changeArr(int[] arr)
+        {
+            arr[0] = arr[0] - 8;
+            arr[2] += 5;
+            arr[4] *= 10;
+        }
+        static void changeArr2(ref int[] arr)
+        {
+            arr[0] = arr[0] - 18;
+            arr[2] += 15;
+            arr[4] *= 110;
+        }
         static void PerformAction(ref long[] array, string action, int[] args)
         {
             int pos = args[0] -1;

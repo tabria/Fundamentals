@@ -10,7 +10,6 @@ namespace Mines
     {
         static void Main()
         {
-
             string strMine = Console.ReadLine();
             string regex = @"(<.{2}>)";
             
